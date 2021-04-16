@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    /* font */
+    font-family: "Averta CY", sans-serif;
+}
+    
+body {
+    margin: 0;
+}
+    
+/* Clear floats after the columns */
+    
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#header {
+    width: 100%;
+    background-color: white;
+    font-size: 30px;
+}
+
+#header h1 {
+    color: teal;
+}
+
+.column-1 {
+    width: 100%;
+    float: left;
+}
+
+#section-1 {
+    background-color: #f5eef5;
+    text-align: left;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+    font-size: 30px;
+}
+
+.column-2 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.column-2 h1 {
+    color: slategray;
+}
+
+#section-2 {
+    background-color: #faf5f3;
+}
+
+#section-3 {
+    background-color: #f2f9f8;
+}
+
+#section-4 {
+    background-color: black;
+    color: white;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relleno-lateral {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.relleno-columnas {
+    padding-right: 20px;
+}
+
+.padding-right {
+    padding-right: 10%;
+}
+
+.padding-left {
+    padding-left: 10%;
+}
+
+@media screen and (max-width:700px) {
+    /* Responsive layout */
+    /* la clase two-column ha de tener ancho de 100% */
+    .column-2 {
+        width: 100%;
+        font-size: 75%;
+    }
+
+    #header {
+        width: 100%;
+        background-color: white;
+        font-size: 20px;
+    }
+
+    /* la clase four-column ha de tener ancho de 50% */
+    .column-4 {
+        width: 50%;
+    }
+
+    .relleno-lateral {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .relleno-columnas {
+        padding-right: 0px;
+    }
+
+    .flex {
+        display: block;
+    }
+
+    .padding-right {
+        padding-right: 0%;
+    }
+    
+    .padding-left {
+        padding-left: 0%;
+    }
+}
